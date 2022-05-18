@@ -13,4 +13,8 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+  loginClicked() {
+    this.router.navigate(['./password-change']);
+  }
+
 }
