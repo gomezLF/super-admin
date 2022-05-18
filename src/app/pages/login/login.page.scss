@@ -1,0 +1,71 @@
+.container {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.container .image-container {
+    margin-top: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .image-container ion-img {
+    height: 150px;
+    width: 260px;
+}
+
+.container .welcomeMessage {
+    margin-top: 60px;
+    text-align: center;
+    color: var(--ion-color-azul-principal);
+    font-size: 16px;
+}
+
+.container .form-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .form-wrapper form ion-input {
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+}
+
+.container .form-wrapper form .password-field {
+    margin-top: 16px;
+}
+
+.container .form-wrapper form .loing-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.container .form-wrapper form .loing-container .loging-button {
+    text-transform: inherit;
+    width: 162px;
+    height: 38px;
+
+    --background: var(--ion-color-azul-principal);
+    --color: white;
+    --border-radius: 999px;
+    --box-shadow: none;
+}
+
+.container .change-password-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.container .change-password-container .change-password-button {
+    text-transform: inherit;
+
+    --background: transparent;
+    --color: var(--ion-color-azul-principal);
+    --box-shadow: none;
+}
+

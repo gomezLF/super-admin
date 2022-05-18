@@ -1,9 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+	<div class="container">
+		<div class="image-container">
+			<ion-img src="../../../assets/img/super_giros.svg"></ion-img>
+		</div>
 
+		<h1 class="welcomeMessage">Bienvenido a SuperAdmin</h1>
+
+		<div class="form-wrapper">
+			<form>
+
+				<div class="input-container">
+					<ion-input class="username-field" type="text" placeholder="Usuario"></ion-input>
+				</div>
+
+				<div class="input-container">
+					<ion-input class="password-field" type="password" placeholder="Contraseña"></ion-input>
+				</div>
+
+				<div class="loing-container">
+					<ion-button class="loging-button" type="submit">Ingresar</ion-button>
+				</div>
+			</form>
+		</div>
+
+		<div class="change-password-container">
+			<ion-button class="change-password-button">Recuperar contraseña</ion-button>
+		</div>
+
+	</div>
 </ion-content>
