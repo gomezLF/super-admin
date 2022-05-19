@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { FirestoreService } from 'src/app/services/firestore.service';
+import {
+	FormGroup,
+	FormControl,
+	Validators,
+	FormBuilder
+  }from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-password-change',
@@ -7,9 +15,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasswordChangePage implements OnInit {
 
-  constructor() { }
+	formChangePassword: FormGroup;
 
-  ngOnInit() {
-  }
+	constructor(public fb: FormBuilder, private router: Router, public database: FirestoreService) {
+		this.formChangePassword = this.fb.group({
+			newPassword: new FormControl('', Validators.required),
+			newPasswordConfirm: new FormControl('',Validators.required),
+		  });
+	 }
+
+	ngOnInit() {
+	}
+
+	loginClicked() {
+		const values = this.formChangePassword.value;
+
+		if(!this.formChangePassword.invalid && (values.newPassword === values.newPasswordConfirm)){
+			this.database.currentUser.contraseña = values.newPassword;
+			this.database.currentUser.contraseñaPropia = false;
+
+			this.database.setUser(this.database.currentUser);
+			this.router.navigate(['./home']);
+		}else {
+			console.log('NOse');
+		}
+	}
 
 }

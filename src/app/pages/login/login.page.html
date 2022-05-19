@@ -7,14 +7,14 @@
 		<h1 class="welcomeMessage">Bienvenido a SuperAdmin</h1>
 
 		<div class="form-wrapper">
-			<form>
+			<form [formGroup]="formLoginUser">
 
 				<div class="input-container">
-					<ion-input class="username-field" type="text" placeholder="Usuario"></ion-input>
+					<ion-input formControlName="username" class="username-field" type="text" placeholder="Usuario"></ion-input>
 				</div>
 
 				<div class="input-container">
-					<ion-input class="password-field" type="password" placeholder="Contraseña"></ion-input>
+					<ion-input formControlName="password" class="password-field" type="password" placeholder="Contraseña"></ion-input>
 				</div>
 
 				<div class="loing-container">
