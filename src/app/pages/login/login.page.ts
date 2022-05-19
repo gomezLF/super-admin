@@ -39,7 +39,7 @@ export class LoginPage implements OnInit {
           if(user.exists && values.password === userData.contraseña){
             this.database.currentUser = userData;
 
-            if(!values.contraseñaPropia){
+            if(values.contraseñaPropia){
               this.router.navigate(['./password-change']);
             }else {
               this.router.navigate(['./home']);
