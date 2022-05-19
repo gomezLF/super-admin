@@ -22,27 +22,27 @@
       <form [formGroup]="formCreateUser">
 
         <div class="input-container">
-          <ion-input class="info-field" formControlName="iddoc" placeholder="Número de identificación"></ion-input>
+          <ion-input formControlName="number" placeholder="Número de celular *"></ion-input>
         </div>
 
         <div class="input-container">
-          <ion-input formControlName="name" placeholder="Nombre(s)"></ion-input>
+          <ion-input formControlName="homenumber" placeholder="Teléfono fijo"></ion-input>
         </div>
 
         <div class="input-container">
-          <ion-input formControlName="flastname" placeholder="Primer apellido"></ion-input>
+          <ion-input formControlName="rol" placeholder="Rol"></ion-input>
         </div>
 
         <div class="input-container">
-          <ion-input formControlName="slastname" placeholder="Segundo apellido"></ion-input>
+          <ion-input formControlName="state" placeholder="Estado *"></ion-input>
         </div>
 
         <div class="input-container">
-          <ion-input formControlName="email" placeholder="Correo electrónico"></ion-input>
+          <ion-input formControlName="colaborate" placeholder="Colaborador *"></ion-input>
         </div>
 
-        <div class="next-container">
-          <ion-button class="next-button" (click)="createUserNextPage()">Siguiente</ion-button>
+        <div class="save-container">
+          <ion-button class="save-button" (click)="saveUser()">Guardar</ion-button>
         </div>
 
       </form>

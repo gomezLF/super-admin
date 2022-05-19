@@ -9,11 +9,12 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-create-user',
-  templateUrl: './create-user.page.html',
-  styleUrls: ['./create-user.page.scss'],
+  selector: 'app-create-user-p2',
+  templateUrl: './create-user-p2.page.html',
+  styleUrls: ['./create-user-p2.page.scss'],
 })
-export class CreateUserPage implements OnInit {
+export class CreateUserP2Page implements OnInit {
+
 
   formCreateUser: FormGroup;
 
@@ -21,18 +22,18 @@ export class CreateUserPage implements OnInit {
     private router: Router,
     public alertController: AlertController) {
     this.formCreateUser = this.fb.group({
-      'iddoc': new FormControl("",Validators.required),
-      'name': new FormControl("",Validators.required),
-      'flastname': new FormControl("",Validators.required),
-      'slastname': new FormControl("",Validators.required),
-      'email': new FormControl("",Validators.required)
+      'number': new FormControl("",Validators.required),
+      'homenumber': new FormControl("",Validators.required),
+      'rol': new FormControl("",Validators.required),
+      'state': new FormControl("",Validators.required),
+      'colaborate': new FormControl("",Validators.required)
     })
   }
 
   ngOnInit() {
   }
 
-  async createUserNextPage(){
+  async saveUser(){
     var f = this.formCreateUser.value;
 
     if(this.formCreateUser.invalid){
@@ -45,15 +46,16 @@ export class CreateUserPage implements OnInit {
       await alert.present();
       return
     }else{
-      var firstPartUser = {
-        id: f.iddoc,
-        name: f.name,
-        flastname: f.flastname,
-        slastname: f.slastname,
-        email: f.email
+      var secondPartUser = {
+        number: f.number,
+        homenumber: f.homenumber,
+        rol: f.rol,
+        state: f.state,
+        colaborate: f.colaborate
       }
-      localStorage.setItem('usuarioP1', JSON.stringify(firstPartUser));
-      this.router.navigate(['create-user-p2'])
+      localStorage.setItem('usuarioP2', JSON.stringify(secondPartUser));
+      //this.router.navigate(['create-user-p2'])
     }
   }
+
 }
