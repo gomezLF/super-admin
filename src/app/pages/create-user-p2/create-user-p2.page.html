@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="create-user"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+
+    <div class="form-wrapper">
+      
+      <div class="tittle-container">
+        <ion-text class="ion-text">
+          <h2 class="h2-text">Crear usuario:</h2>
+        </ion-text>
+      </div>
+
+      <form [formGroup]="formCreateUser">
+
+        <div class="input-container">
+          <ion-input formControlName="number" placeholder="Número de celular *"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="homenumber" placeholder="Teléfono fijo"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="rol" placeholder="Rol"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="state" placeholder="Estado *"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="colaborate" placeholder="Colaborador *"></ion-input>
+        </div>
+
+        <div class="save-container">
+          <ion-button class="save-button" (click)="saveUser()">Guardar</ion-button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</ion-content>

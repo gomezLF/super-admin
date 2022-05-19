@@ -1,0 +1,53 @@
+.container {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+}
+
+
+.container .form-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .form-wrapper form ion-input {
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+    margin-top:16px;
+    padding-left: 15%;
+}
+
+.container .form-wrapper .tittle-container {
+    align-items: left;
+    margin-top: 100px;
+}
+
+.container .form-wrapper .tittle-container ion-text {
+    text-align: left;
+    color: var(--ion-color-azul-principal);
+}
+
+.container .form-wrapper .tittle-container ion-text .h2-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container .form-wrapper form .save-container {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.container .form-wrapper form .save-container .save-button {
+    text-transform: inherit;
+    width: 162px;
+    height: 38px;
+
+    --background: var(--ion-color-azul-principal);
+    --color: white;
+    --border-radius: 999px;
+    --box-shadow: none;
+}
