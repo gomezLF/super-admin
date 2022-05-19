@@ -54,7 +54,7 @@ export class CreateUserP2Page implements OnInit {
         colaborate: f.colaborate
       }
       localStorage.setItem('usuarioP2', JSON.stringify(secondPartUser));
-      //this.router.navigate(['create-user-p2'])
+      this.router.navigate(['home'])
     }
   }
 
