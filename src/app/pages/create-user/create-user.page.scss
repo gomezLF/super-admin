@@ -1,0 +1,95 @@
+.container{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 158px;
+}
+
+.welcomeMessage{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+
+    color: var(--ion-color-azul-principal);
+}
+
+.idType-field{
+    margin-top: 40px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.id-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.name-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.firstName-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.secondName-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.email-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.create-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.create-container .create-button{
+    text-transform: inherit;
+    width: 208px;
+    height: 38px;
+
+    --background: var(--ion-color-azul-principal);
+    --color: white;
+    --border-radius: 999px;
+    --box-shadow: none;
+}

@@ -1,0 +1,84 @@
+.container{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 158px;
+}
+
+.welcomeMessage{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+
+    color: var(--ion-color-azul-principal);
+}
+
+.celNumber-field{
+    margin-top: 40px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.homePhone-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.rol-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.status-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.colaborator-field{
+    margin-top: 20px;
+    --color: var(--ion-color-azul-principal);
+    --placeholder-color: var(--ion-color-gray);
+    border: solid 1px var(--ion-color-azul-principal);
+    border-radius: 999px;
+
+    width: 283px;
+    height: 38px;
+}
+
+.create-container {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.guardar-button{
+    text-transform: inherit;
+    width: 199px;
+    height: 38px;
+
+    --background: var(--ion-color-azul-principal);
+    --color: white;
+    --border-radius: 999px;
+    --box-shadow: none;
+}
