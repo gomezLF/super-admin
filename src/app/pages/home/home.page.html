@@ -1,9 +1,42 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <article class="home">
+
+    <div class="home__logo">
+      <ion-img src="../../../assets/img/super_giros.svg"></ion-img>
+    </div>
+
+    <section class="home__text">
+      <h2>Bienvenido de vuelta</h2>
+      <h1 class="home__text__name">Nombre de la persona</h1>
+    </section>
+
+    <section class="home__logOut">
+      <ion-img src="../../../assets/img/logOut.svg"></ion-img>
+      <p>cerrar sesion</p>
+
+    </section>
+  
+
+  </article>
+
+  <ion-tabs class="navBar">
+    <ion-tab-bar class="navBar__container" slot="bottom">
+      <ion-tab-button class="navBar__button" tab="Administración">
+        <ion-img src="../../../assets/img/admin.svg"></ion-img>
+        <ion-label class="navBar__label">Administración</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button class="navBar__button" tab="Home">
+        <ion-img src="../../../assets/img/home.svg"></ion-img>
+        <ion-label class="navBar__label">Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button class="navBar__button" tab="Reportes">
+        <ion-img src="../../../assets/img/report.svg"></ion-img>
+        <ion-label class="navBar__label">Reportes</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
 
 </ion-content>
