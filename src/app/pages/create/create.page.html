@@ -1,0 +1,28 @@
+<ion-content>
+	<div class="container">
+		
+		<h1 class="welcomeMessage">Crear Usuario</h1>
+
+		<div class="form-wrapper">
+			<form>
+
+				<div class="input-container">
+					<ion-input class="username-field" type="text" placeholder="Usuario"></ion-input>
+				</div>
+
+				<div class="input-container">
+					<ion-input class="password-field" type="password" placeholder="Contraseña"></ion-input>
+				</div>
+
+				<div class="loing-container">
+					<ion-button class="loging-button" type="submit" (click)="loginClicked()">Ingresar</ion-button>
+				</div>
+			</form>
+		</div>
+
+		<div class="change-password-container">
+			<ion-button class="change-password-button">Recuperar contraseña</ion-button>
+		</div>
+
+	</div>
+</ion-content>
