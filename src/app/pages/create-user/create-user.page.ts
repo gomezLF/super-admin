@@ -5,6 +5,7 @@ import {
   Validators,
   FormBuilder
 }from '@angular/forms'
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-create-user',
@@ -15,8 +16,8 @@ export class CreateUserPage implements OnInit {
 
   formCreateUser: FormGroup;
 
-
-  constructor(public fb: FormBuilder) {
+  constructor(public fb: FormBuilder,
+    public alertController: AlertController) {
     this.formCreateUser = this.fb.group({
       'iddoc': new FormControl("",Validators.required),
       'name': new FormControl("",Validators.required),
@@ -29,4 +30,28 @@ export class CreateUserPage implements OnInit {
   ngOnInit() {
   }
 
+  async createUserNextPage(){
+    var f = this.formCreateUser.value;
+
+    if(this.formCreateUser.invalid){
+      const alert = await this.alertController.create({
+        header: 'INCOMPLETO',
+        message: 'Debes de llenar todos los campos antes de continuar.',
+        buttons: ['OK']
+      });
+  
+      await alert.present();
+      return
+    }
+
+    var usuario = {
+      id: f.iddoc,
+      name: f.name,
+      flastname: f.flastname,
+      slastname: f.slastname,
+      email: f.email
+    }
+
+    localStorage.setItem('usuario', JSON.stringify(usuario))
+  }
 }

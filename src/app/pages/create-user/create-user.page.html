@@ -1,50 +1,53 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar class="primary">
     <ion-title>create-user</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-<div class="container">
+  <div class="container">
 
-  <div class="form-wrapper">
-    
-    <div class="tittle-container">
-      <ion-text class="ion-text">
-        <h2 class="h2-text">Crear usuario:</h2>
-      </ion-text>
+    <div class="form-wrapper">
+      
+      <div class="tittle-container">
+        <ion-text class="ion-text">
+          <h2 class="h2-text">Crear usuario:</h2>
+        </ion-text>
+      </div>
+
+      <form [formGroup]="formCreateUser">
+
+        <div class="input-container">
+          <ion-input class="info-field" formControlName="iddoc" placeholder="Número de identificación"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="name" placeholder="Nombre(s)"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="flastname" placeholder="Primer apellido"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="slastname" placeholder="Segundo apellido"></ion-input>
+        </div>
+
+        <div class="input-container">
+          <ion-input formControlName="email" placeholder="Correo electrónico"></ion-input>
+        </div>
+
+        <div class="next-container">
+          <ion-button class="next-button" (click)="createUserNextPage()">Siguiente</ion-button>
+        </div>
+
+      </form>
+
     </div>
-
-    <form [formGroup]="formCreateUser">
-
-      <div class="input-container">
-        <ion-input class="info-field" formControlName="iddoc" placeholder="Número de identificación"></ion-input>
-      </div>
-
-      <div class="input-container">
-        <ion-input formControlName="name" placeholder="Nombre(s)"></ion-input>
-      </div>
-
-      <div class="input-container">
-        <ion-input formControlName="flastname" placeholder="Primer apellido"></ion-input>
-      </div>
-
-      <div class="input-container">
-        <ion-input formControlName="slastname" placeholder="Segundo apellido"></ion-input>
-      </div>
-
-      <div class="input-container">
-        <ion-input formControlName="email" placeholder="Correo electrónico"></ion-input>
-      </div>
-
-      <div class="next-container">
-        <ion-button class="next-button">Siguiente</ion-button>
-      </div>
-
-    </form>
-
   </div>
-</div>
 
 </ion-content>
